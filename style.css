@@ -1,0 +1,23 @@
+body{
+    background-color:#232323;
+}
+.home{
+    background-image: url(images/netflix-bg-img.jpg);
+}
+#form-ss::placeholder{
+    color: rgba(255, 255, 255, 0.9);
+}
+@media screen and (max-width:991px){
+    .h-m{
+        height: 46px;
+    }
+    .t1{
+        text-align: center;
+    }
+}
+.accordion{
+    border: none;
+}
+.accordion-item{
+    border: none;
+}
