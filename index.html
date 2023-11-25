@@ -9,20 +9,19 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-  
   <section class="home pb-5">
     <nav class="navbar navbar-expand-lg pb-5">
       <div class="container pb-lg-5">
-        <a class="navbar-brand" href="#"><img src="images/netflix_logo.png" class="img-fluid"></a>
+        <a class="navbar-brand" href="#"><img src="images/logo.png" class="img-fluid" style="width: 180px;"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4 ">
             <div class="dropdown">
               <button class="border-white btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">жа English</button>
               <ul class="dropdown-menu text-center">
-                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item"  href="#">English</a></li>
                 <li><a class="dropdown-item" href="#">Hindi</a></li>
               </ul>
             </div>
@@ -36,12 +35,12 @@
     <div class="container-fluid mt-5 pb-5">
       <div class="row pb-5">
         <div class="col-lg-2"></div>
-        <div class="col-lg-8 mt-lg-5">
-          <h1 class="text-center text-white" style="font-weight: 900;">The biggest Indian hits. The best Indian stories. All streaming here.</h1>
-          <p class="text-center text-white mt-1 fs-3">Watch anywhere. Cancel anytime.</p>
-          <p class="text-center text-white fs-3">Ready to watch? Enter your email to create or restart your membership.</p>
+        <div class="col-lg-8 mt-lg-5 text-center">
+          <h1 class="text-white" style="font-weight: 900;">The biggest Indian hits. The best Indian stories. All streaming here.</h1>
+          <p class="text-white mt-1 fs-3">Watch anywhere. Cancel anytime.</p>
+          <p class="text-white fs-4">Ready to watch? Enter your email to create or restart your membership.</p>
           <div class="d-lg-flex text-center justify-content-center">
-            <input class=" w-50 h-m me-2 bg-black text-white opacity-50" id="form-ss" type="search" placeholder="Email Address">
+            <input class=" w-50 border border-white me-2 bg-black text-white opacity-50" id="form-ss" type="search" placeholder="Email Address">
             <button type="button" class="btn fs-4 text-white" style="background-color: #E50914;">Get Started ></button>
           </div>
         </div>
@@ -56,8 +55,13 @@
           <h1 class="text-white" style="font-weight: 900;">Enjoy on your TV</h1>
           <p class="text-white fs-5">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
         </div>
-        <div class="col-lg-6 pb-5">
-          <img src="images/tv.png" alt="tv-img" class="img-fluid">
+        <div class="col-lg-6 pb-5 ">
+          <div class="image-1 ">
+            <img src="images/tv.png" alt="tv-img" class="img-fluid">
+            <div class="video-1">
+              <video src="videos/video-tv.m4v" autoplay muted loop ></video>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -66,9 +70,25 @@
   <section class="Download-shows mt-2 bg-black">
     <div class="container pt-5">
       <div class="row pt-5 t1">
-        <div class="col-lg-6 mb-lg-5">
-          <img src="images/netflix_download_img.jpg" alt="download-img" class="img-fluid" >
+        <div class="col-lg-6 mb-lg-5 ">
+          <div class="up-phone-img">
+            <div class="">
+              <img src="images/netflix_download_img.jpg" alt="download-img" class="img-fluid">
+            </div>
+            <div class="up img-fluid d-inline-flex bg-black justify-content-around p-2 rounded-3 ">
+              <div class="img-fluid">
+                <img src="images/boxshot.png" class="img-fluid" style="height: 3rem;" alt="boxshoot-img">
+              </div>
+              <div class="text-l">
+                <span class="text-white d-block">Stranger Things</span>&nbsp;&nbsp;<span class="text-primary">Downloading...</span>
+              </div>
+              <div class="img-fluid">
+                <img src="images/download-icon.gif" class="img-fluid" style="width: 3rem;" alt="download-icon-img">
+              </div>
+            </div>
+          </div>
         </div>
+
         <div class="col-lg-6 pt-lg-5 mt-5 pb-5">
           <h1 class="text-white" style="font-weight: 900;">Download your shows to watch offline</h1>
           <p class="text-white fs-5">Save your favourites easily and always have something to watch.</p>
@@ -85,7 +105,12 @@
           <p class="text-white fs-5">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying much.</p>
         </div>
         <div class="col-lg-6 pb-5">
-          <img src="images/tv_with_tab.png" alt="tv-with-tab-img" class="img-fluid">
+          <div class="image-1">
+            <img src="images/tv_with_tab.png" alt="tv-with-tab-img" class="img-fluid">
+            <div class="video-2">
+              <video src="videos/video-devices.m4v" autoplay muted loop></video>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -188,7 +213,7 @@
       </div>
       <h5 class="text-white mt-5">Ready to watch? Enter your email to create or restart your membership.</h5>
       <div class="d-lg-flex mt-2 text-center justify-content-center">
-        <input class=" w-25 h-m me-2 bg-black text-white opacity-50" id="form-ss" type="search" placeholder="Email Address">
+        <input class="border border-white w-25 h-m me-2 bg-black text-white opacity-50" id="form-ss" type="search" placeholder="Email Address">
         <button type="button" class="btn text-white img-fluid" style="background-color: #E50914;"><span class="fs-5">Get Started </span>></button>
       </div>
     </div>

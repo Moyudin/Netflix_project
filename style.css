@@ -3,6 +3,7 @@ body{
 }
 .home{
     background-image: url(images/netflix-bg-img.jpg);
+    box-shadow: inset 0 0 0 1444px rgba(0,0,0,0.6);
 }
 #form-ss::placeholder{
     color: rgba(255, 255, 255, 0.9);
@@ -20,4 +21,60 @@ body{
 }
 .accordion-item{
     border: none;
+}
+.up-phone-img{
+    position: relative;
+}
+.up{    
+    overflow: hidden;
+    position: absolute;
+    left: 20%;
+    bottom:5%;
+    width: 60%;
+    border: 2px solid grey;
+    box-shadow: 0 0 2em 0 rgb(0,0,0);
+    width: 60%;
+}
+@media screen and (max-width:377px){
+    .text-l{
+        font-size: small;
+    }
+}
+.image-1{
+    position: relative;
+    z-index: 1;
+}
+.video-1{
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+    max-width: 73%;
+    max-height: 54%;
+    top: 21%;
+    left: 13%;
+}
+.video-2{
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+    max-width: 63%;
+    max-height: 47%;
+    top: 8%;
+    left: 17%;
+}
+@media screen and (min-width:1400px){
+    .video-1{
+        max-width: 65%;
+    }
+}
+@media screen and (min-width:1400px){
+    .video-2{
+        max-width: 55%;
+    }
+}
+@media screen and (min-width:767px) and (max-width:991px){
+    .video-1 , .video-2{
+        max-width: 55%;
+        left: 22%;
+    }
 }
